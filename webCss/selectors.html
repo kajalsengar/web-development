@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Selectors</title>
+    <style>
+        div {
+            /* background-color: crimson; */
+        }
+
+        /* Class Selector */
+        .white {
+            background-color: lightseagreen;
+        }
+
+        /* Id selector */
+        #black {
+            background-color: hotpink;
+        }
+
+        /* Child selector */
+        div>p {
+            background-color: black;
+            color: aqua;
+        }
+
+        /* Descendent selector*/
+        div p {
+            background-color: black;
+            color: aqua;
+        }
+
+        /* Universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo selector */
+        a:visited{
+            color:chocolate;
+        }
+a:link{
+    color: green;
+}
+a:active{
+    background-color: indigo;
+}
+a:hover{
+background-color: darkorange;
+}
+</style>
+</head>
+
+<body>
+    <div class="white">
+        Hey this is a div
+    </div>
+
+    <div id="black">
+        Heyy this is a another div
+    </div>
+
+    <div>
+        Try something....
+        <p>This is a para inside selector</p>
+    </div>
+
+    <div>
+        Again try something....
+        <article>
+            <p>This is a para inside article</p>
+        </article>
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.Instagram.com">Go to Instagram</a>
+</body>
+</html>
