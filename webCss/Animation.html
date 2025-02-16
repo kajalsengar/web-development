@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animations</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+height: 80vh;
+width: 30vw;
+        }
+        .box{
+width: 34px;
+height: 45px;
+/* background-color: blueviolet; */
+animation: kuchhBhi ;
+animation-duration: 2s;
+animation-delay: 2s;
+animation-timing-function: ease-out;
+animation-iteration-count: 3; 
+animation-direction: alternate-reverse;
+/* animation-play-state: paused;
+/* animation: kuchhBhi 2s ease-in 3s 2 alternate forwards; */
+        }
+        @keyframes kuchhBhi {
+            from{
+/* transform: translate(10px); */
+background-color: cadetblue;
+            }
+            to{
+transform: translateX(300px);
+background-color: blueviolet;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
