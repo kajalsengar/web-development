@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Filters</title>
+    <style>
+        .container {}
+
+        /* img{
+            filter: blur(2px);
+        } */
+        .img1 {
+            /* filter: blur(10px); */
+filter: brightness(100%) contrast(1);
+        }
+        .img2{
+filter: grayscale(40%) sepia(5%);
+/* filter: invert(10%); */
+        }
+        .img3{
+/* filter: drop-shadow(60); */
+filter: opacity(100%);   
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="img1"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Fs_FYn8jAf8lL2i6BVsTAm9UmUSWZ40iFg&s"
+            alt="image">
+        <img class="img2"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMfKApF_A1R9Mi2GT7x_3QHapqksz0hMPCBQ&s"
+            alt="srk">
+        <img class="img3"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTon13Q4LeDqikpY9nQiWhCvMiue9h9mYFerQ&s"
+            alt="krishna">
+    </div>
+</body>
+
+</html>
