@@ -44,4 +44,4 @@ function AnotherWord() {
     }
 }
 
-console.log("Business Name... \n", Adjectives(),ShopName(),AnotherWord())
+console.log("Business Name... \n", Adjectives(), ShopName(), AnotherWord())
