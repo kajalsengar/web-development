@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="display: flex; ">Hey this is a box</div>
+        <div class="box">Hey this is a box</div>
+    </div>
+
+    <script>
+        // let div= document.createElement("div")
+        // div.innerHTML="I have been Inserted <b> harry </b>"
+        // div.setAttribute("class","created")
+        // document.querySelector(".container").append(div)
+        // document.querySelector(".container").before(div)
+        // document.querySelector(".container").prepend(div)
+        let cont = document.querySelector(".container")
+        cont.insertAdjacentHTML("beforebegin", "<b> Hey i am under the water . please help me . here is to much remaining.... </b>")
+        // document.querySelector(".container").classList.toggle("red")
+    </script>
+</body>
+</html>
