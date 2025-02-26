@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventBubbling</title>
+    <style>
+        .child{
+            background-color: aliceblue;
+            border: 2px solid black;
+            padding: 14px;
+            margin: 14px;
+        }
+        .childContainer{
+            background-color:aquamarine;
+            padding: 14px;
+            margin: 14px;
+        }
+        .container{
+            background-color:aqua;
+            padding: 14px;
+            margin: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">
+                This is a child
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.querySelector(".child").addEventListener("click", (e)=>{
+            // e.stopPropagation();
+            alert("Child was clicked..")
+        })
+
+        document.querySelector(".childContainer").addEventListener("click", (e)=>{
+            e.stopPropagation();
+            alert("childContainer was clicked..")
+        })
+        
+        document.querySelector(".container").addEventListener("click", (e)=>{
+            alert("Container was clicked..")
+        })
+
+        // let a = setInterval(() =>{
+        //     document.querySelector(".childContainer").style.background = "gray"
+        // }, 3000);
+        // console.log(a)
+
+        let b = setTimeout(() =>{
+            document.querySelector(".childContainer").style.background = "gray"
+        }, 3000);
+        console.log(b)
+    </script>
+</body>
+
+</html>
