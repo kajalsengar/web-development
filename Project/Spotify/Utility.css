@@ -33,3 +33,27 @@
 .p-1{
     padding: 10px;
 }
+
+/* Apply to the entire page */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    height: 10px; /* Height of the scrollbar (for horizontal scrollbar) */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #2d2d2d; /* Dark background for the scrollbar track */
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #555; /* Dark thumb color */
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Hover effect for thumb */
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: none; /* Optional: hides the buttons on the scrollbar */
+  }
