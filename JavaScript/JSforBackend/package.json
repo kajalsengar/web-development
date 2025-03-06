@@ -1,0 +1,15 @@
+{
+  "name": "spotify",
+  "version": "1.0.0",
+  "description": "ths is a sptify clone for my app",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "spotify"
+  ],
+  "author": "kajal",
+  "license": "ISC"
+}
