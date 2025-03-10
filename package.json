@@ -1,6 +1,24 @@
 {
   "dependencies": {
     "express": "^4.21.2",
+    "nodemon": "^3.1.9",
     "slugify": "^1.6.6"
-  }
+  },
+  "name": "express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kajalsengar/web-development.git"
+  },
+  "author": "kajal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kajalsengar/web-development/issues"
+  },
+  "homepage": "https://github.com/kajalsengar/web-development#readme",
+  "description": ""
 }
