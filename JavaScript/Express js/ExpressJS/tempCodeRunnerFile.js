@@ -1,1 +1,0 @@
-URL: http://localhost:3000/blog/intro-to-padosi?mode=dark&region=in
